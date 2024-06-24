@@ -1,2 +1,2 @@
-# adj
-Zerd
+# ai
+ai

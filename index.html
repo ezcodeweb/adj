@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Story Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="zerd.png">
+</head>
+<body>
+  <div class="account-contain">
+    <div class="inform">
+      <img src="people.jpg" class="avatar" id="profile-pic">
+      <p class="name" id="name">Unknown</p>
+      <div class="dropdown">
+        <img src="falldown.jpg" class="btn">
+        <div class="dropdown-content" align="center">
+          <div id="g_id_onload"
+            data-client_id="516022783180-e36rsp9si98j9llak6hq7i2n5t6meg81"
+            data-callback="handleCredentialResponse">
+          </div>
+          <div class="g_id_signin" data-type="standard"></div>
+          <button onclick="handleSignOut()" class="signout">Sign Out</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="story-display" id="story"></div>
+    <div class="prompt-section">
+      <input type="text" id="in" placeholder="Enter prompt here..."> 
+      <button id="sub"><img src="send.jpg" width="100%" style="border-radius: 50%; margin-right: 2%;"></button>
+    </div>
+  </div>
+  <script src="https://esm.run/@google/generative-ai"></script>
+  <script type="module" src="script.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</body>
+</html>
